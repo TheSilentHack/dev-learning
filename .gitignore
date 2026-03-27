@@ -36,6 +36,6 @@ Makefile.cmake
 .vscode/
 .idea/
 
-# Divers
+# Misc
 *.log
 .DS_Store
