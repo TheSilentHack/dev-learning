@@ -1,4 +1,4 @@
-# Binairies & objects
+# Binaries & objects
 *.o
 *.obj
 *.slo
@@ -28,6 +28,8 @@
 
 # Build systems
 build/
+cmake-build-debug/
+cmake-build-release/
 CMakeCache.txt
 CMakeFiles/
 Makefile.cmake
