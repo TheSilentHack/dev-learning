@@ -1,0 +1,2 @@
+# dev-learning
+This repository shows my learning path tobecome a good developper. I'm starting as a beginner, and I'll finish advanced.
