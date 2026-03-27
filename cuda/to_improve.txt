@@ -1,0 +1,49 @@
+#!/bin/bash
+
+set -e
+
+nvcc -std=c++23 kernel.cu -o program
+
+./program
+
+
+But later :
+
+#!/bin/bash
+
+set -euo pipefail
+
+# Flags CUDA + C++23
+CXXFLAGS="-std=c++23 -O3 -Wall -Wextra -Wpedantic"
+CUDAFLAGS="-arch=sm_92"  # RTX 5060 Ti (Blackwell)
+
+SRC="kernel.cu"
+OUT="program"
+
+nvcc $CXXFLAGS $CUDAFLAGS "$SRC" -o "$OUT"
+
+echo "Compilation CUDA OK."
+./"$OUT"
+
+
+Multi-fichiers :
+
+#!/bin/bash
+
+set -euo pipefail
+
+CXXFLAGS="-std=c++23 -O3 -Wall -Wextra -Wpedantic"
+CUDAFLAGS="-arch=sm_92"
+
+SRC=(
+    main.cpp
+    kernel.cu
+    utils.cpp
+)
+
+OUT="program"
+
+nvcc $CXXFLAGS $CUDAFLAGS "${SRC[@]}" -o "$OUT"
+
+echo "Compilation CUDA OK."
+./"$OUT"

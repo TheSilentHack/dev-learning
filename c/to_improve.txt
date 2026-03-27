@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+clang -std=c11 -Wall -Wextra -Wpedantic main.c -o program
+
+./program
+
+
+
+But later :
+
+#!/bin/bash
+
+set -euo pipefail
+
+CFLAGS="-std=c11 -Wall -Wextra -Wpedantic -O2"
+SRC="main.c"
+OUT="program"
+
+gcc $CFLAGS "$SRC" -o "$OUT"
+
+./"$OUT"
