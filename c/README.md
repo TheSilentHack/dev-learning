@@ -1,24 +1,22 @@
 # C
-Exercices sur les bases du C.
+Exercises on C basics.
 
 ---
 
-## Contenu
-| Dossier | Sujet |
-|---------|-------|
+## Contents
+| Folder | Topic |
+|--------|-------|
 
 ---
 
 ## Compilation
-Chaque dossier contient un fichier `build.sh` 
-pour compiler le fichier `main.c`.  
-À exécuter dans le terminal :
-
+Each folder contains a `build.sh` file
+to compile the `main.c` file.  
+Run it in the terminal:
 ```bash
 ./build.sh
 ```
-Puis exécuter l'exécutable `program` :
-
+Then run the `program` executable:
 ```bash
 ./program
 ```
