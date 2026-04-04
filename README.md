@@ -1,13 +1,14 @@
 # dev-learning
-Apprentissage C / C++ / CUDA / SQL.
+Learning journal — C/C++/CUDA/SQL from scratch.
+This is a work in progress, not production code.
 
 ## Contenu
 | Dossier | Focus |
 |---------|-------|
-| c/      | Bases C |
-| cpp/    | C++ moderne |
+| c/      | C Language |
+| cpp/    | C++ Language |
 | cuda/   | GPU programming |
-| sql/    | Bases de données |
+| sql/    | Databases |
 
 
 ## Stack
