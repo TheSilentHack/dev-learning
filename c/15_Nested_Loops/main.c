@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void symbol_maker();
+
 int main() {
 
     // Without nested loops
@@ -34,5 +36,30 @@ int main() {
         printf("\n");
     }
 
+    symbol_maker();
+
     return 0;
+}
+
+void symbol_maker() {
+
+    int rows = 0;
+    int columns = 0;
+    char symbol = '\0';
+
+    printf("Enter the number of rows : ");
+    scanf("%d", &rows);
+
+    printf("Enter the number of columns : ");
+    scanf("%d", &columns);
+
+    printf("Enter a symbol to use : ");
+    scanf(" %c", &symbol);
+
+    for (int i = 0; i < columns; i++) {
+        for (int i = 0; i < rows; i++) {
+            printf("%c", symbol);
+        }
+        printf("\n");
+    }
 }
